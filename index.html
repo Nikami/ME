@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <meta charset="UTF-8"/>
+  <title>Test</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+</header>
+<body>
+<div class="chronicle-block">
+  <div class="chronicle-buttons--aside">
+    <div class="chronicle-buttons__button chronicle-buttons__button--aside chronicle-buttons__button--closed" data-status="c"><span class="chronicle-buttons__span">Closed</span></div>
+    <div class="chronicle-buttons__button chronicle-buttons__button--aside chronicle-buttons__button--active" data-status="a"><span class="chronicle-buttons__span">Active</span></div>
+  </div>
+  <!-- КВЕСТЫ -->
+  <h4 class="chronicle-quests__title"><span class="chronicle-quests__title-ico"></span>Chronicles</h4>
+  <div class="chronicle-quests">
+    <ul class="chronicle-quests__missions">
+      <li class="connecting-span connecting-span--missions" style="display: none;">Connecting...</li>
+      <li class="chronicle-quests__mission" data-order="1" data-period="me1" data-status="a">9.01 [Новая Надежда]</li>
+      <li class="chronicle-quests__mission" data-order="2" data-period="me1" data-status="c">9.02 [Особенности национальной
+        охоты]
+      </li>
+      <li class="chronicle-quests__mission" data-order="3" data-period="me1" data-status="a">9.03 [Дом пирожков]</li>
+      <li class="chronicle-quests__mission" data-order="4" data-period="me2" data-status="c">9.04 [Друзья в угаре]</li>
+      <li class="chronicle-quests__mission" data-order="5" data-period="me3" data-status="a">9.05 [Кибер Трандуил]</li>
+      <li class="chronicle-quests__mission" data-order="6" data-period="me2" data-status="c">9.06 [Криминальное чтиво]</li>
+    </ul>
+  </div>
+  <!-- ИНФОРМАЦИЯ ПО КВЕСТУ -->
+  <div class="chronicle-info">
+    <!-- КНОПКИ СОРТИРОВКИ -->
+    <div class="chronicle-buttons">
+      <button class="chronicle-buttons__button chronicle-buttons__primary active" data-period="all">All</button>
+      <button class="chronicle-buttons__button chronicle-buttons__primary" data-period="fb">Flashback</button>
+      <button class="chronicle-buttons__button chronicle-buttons__primary" data-period="me1">ME1 [до 2184]</button>
+      <button class="chronicle-buttons__button chronicle-buttons__primary" data-period="me2">ME2 [2185]</button>
+      <button class="chronicle-buttons__button chronicle-buttons__primary" data-period="me3">ME3 [2186]</button>
+    </div>
+    <div class="chronicle-info-mission chronicle-info-mission--connecting">
+      <span class="connecting-span">Connecting...</span>
+    </div>
+    <div class="chronicle-info-mission hidden" data-order="1">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28"><img src="http://s2.uploads.ru/BMFuQ.jpg"
+             class="chronicle-info__img"/></a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chronicle-info-mission hidden" data-order="2">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28"><img src="https://kudago.com/media/images/event/2d/4c/2d4cde2d86d731e47fb8dcbafa337d6e.jpg"
+                                                                                      class="chronicle-info__img"/></a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chronicle-info-mission hidden" data-order="3">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb_4Lkp4nqB6om-M7ETalcUKNiWfjXoAwrELIEY8Ccr_rKMy79UQ"
+               class="chronicle-info__img"/>
+        </a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chronicle-info-mission hidden" data-order="4">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28">
+          <img src="https://image.freepik.com/free-vector/_21-41736390.jpg"
+               class="chronicle-info__img"/>
+        </a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chronicle-info-mission hidden" data-order="5">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28">
+          <img src="http://www.wired.com/wp-content/uploads/2014/04/Princess-Mononoke-1997.jpeg"
+               class="chronicle-info__img"/>
+        </a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="chronicle-info-mission hidden" data-order="6">
+      <div class="chronicle-info__img-cont">
+        <a href="http://masseffectfromashes.rolka.su/viewtopic.php?id=6989&p=28">
+          <img src="http://graphicdesignjunction.com/wp-content/uploads/2013/03/minimal+wallpapers+22.jpg"
+               class="chronicle-info__img"/>
+        </a>
+      </div>
+      <div class="chronicle-info__desc-cont">
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--desc">Описание</h4>
+          <p>Группа гонконгcких налётчиков безнаказанно грабит грузовики корпорации "Синкай Груп", одного из негласных поставщиков оружия и военной электроники для "Цербера". Не имея официальной лицензии на предпринимательскую деятельность на Земле, "Цербер" первым ощущает на себе последствия методично спланированного разбоя.</p>
+          <p class="chronicle-info__status-cont"><span class="chronicle-info__status-title">Статус:&nbsp;</span><span class="chronicle-info__status">ACTIVE</span></p>
+        </div>
+        <div class="chronicle-info__desc-delim"></div>
+        <div class="chronicle-info__desc">
+          <h4 class="chronicle-info__header chronicle-info__header--arsenal">Арсенал</h4>
+          <p>Пачка сигарет, бензопила, молоко</p>
+          <h4 class="chronicle-info__header chronicle-info__header--appearance">Внешность</h4>
+          <p>творческий беспорядок</p>
+          <h4 class="chronicle-info__header chronicle-info__header--comrades">Участники</h4>
+          <p class="chronicle-info__comrades">
+            Lisa, Jonathan Stinger
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

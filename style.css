@@ -1,0 +1,312 @@
+@font-face {
+  font-family: 'ME';
+  src: url('fonts/ME.woff2') format('woff2'),
+  url('fonts/ME.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #c2c8e8;
+}
+
+.fade {
+  animation: fade 0.5s ease 0.5s;
+}
+
+.hidden {
+  visibility: hidden !important;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.block {
+  visibility: visible !important;
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.chronicle-block {
+  height: 500px;
+  width: 660px;
+}
+
+.chronicle-buttons--aside {
+  float: left;
+  height: 10px;
+}
+
+.chronicle-buttons__button--aside.active {
+  z-index: 2;
+}
+
+.chronicle-buttons__button--aside {
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: relative;
+  height: 96px;
+  width: 25px;
+}
+
+.chronicle-buttons__button--closed {
+  background-image: url('http://funkyimg.com/i/2fY9C.png');
+  color: #e2440d;
+  margin-top: 34px;
+}
+
+.chronicle-buttons__button--active {
+  background-image: url('http://funkyimg.com/i/2fY9B.png');
+  color: #66b2ff;
+  margin-top: -9px;
+}
+
+.chronicle-buttons__span {
+  display: block;
+  font-family: 'ME', Arial, sans-serif;
+  margin-top: 0;
+  transform: rotate(-90deg);
+  transform-origin: 34px 30px;
+}
+
+.chronicle-buttons__primary {
+  background-color: rgba(102, 178, 255, 0.1);
+  border: 1px solid rgba(82, 139, 200, 0.7);
+  border-top: none;
+  border-left: none;
+  color: #66b2ff;
+  cursor: pointer;
+  font-family: 'ME', Arial, sans-serif;
+  float: left;
+  letter-spacing: 1px;
+  padding: 10px 5px;
+  width: 126px;
+}
+
+.chronicle-buttons__primary:last-child {
+  border-right: none;
+}
+
+.chronicle-buttons__primary:hover,
+.chronicle-buttons__primary.active {
+  background-color: rgba(102, 178, 255, 0.4);
+  transition: 0.5s ease-out;
+}
+
+.chronicle-quests {
+  background-image: url('http://funkyimg.com/i/2fY6r.png');
+  border: 1px solid rgba(82, 139, 200, 0.7);
+  display: inline-block;
+  float: right;
+  padding-right: 10px;
+  width: 623px;
+}
+
+.chronicle-quests:after, .chronicle-buttons:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.chronicle-quests__missions {
+  font-family: 'ME', Arial, sans-serif;
+  color: #66b2ff;
+  list-style: none;
+  height: 120px;
+  overflow-y: scroll;
+  padding-left: 20px;
+  margin: 30px 0 30px 30px;
+}
+
+.chronicle-quests__mission {
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+}
+
+.chronicle-quests__mission:before {
+  border-top: 2px solid #66b2ff;
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+}
+
+.chronicle-quests__mission.remove:before {
+  animation: remove 0.5s ease 0, fade 0.5s ease 0.5s;
+}
+
+.chronicle-quests__mission:hover,
+.chronicle-quests__mission.active {
+  background-color: rgba(82, 139, 200, 0.7);
+  transition: 0.5s ease-out;
+}
+
+.chronicle-quests__mission.active {
+  animation: blink 2.5s ease infinite;
+}
+
+.chronicle-quests__title {
+  background: url('http://funkyimg.com/i/2fYdy.png') no-repeat;
+  color: #66b2ff;
+  font-family: 'ME', Arial, sans-serif;
+  float: right;
+  height: 34px;
+  line-height: 34px;
+  padding-left: 30px;
+  letter-spacing: 4px;
+  margin: 0;
+  width: 605px;
+}
+
+.chronicle-quests__title-ico {
+  background: url('http://funkyimg.com/i/2fYdD.png') no-repeat;
+  display: inline-block;
+  height: 15px;
+  margin-right: 10px;
+  width: 20px;
+}
+
+.chronicle-info {
+  background-image: url('http://funkyimg.com/i/2fY6r.png');
+  border: 2px solid rgba(82, 139, 200, 0.7);
+  border-top: none;
+  color: white;
+  clear: both;
+  margin-left: 25px;
+  position: relative;
+  width: 631px;
+}
+
+.chronicle-info-mission {
+  background-image: url('http://funkyimg.com/i/2fY6r.png');
+  border: 2px solid rgba(82, 139, 200, 0.7);
+  border-top: none;
+  position: absolute;
+  width: 631px;
+  margin-left: -2px;
+}
+
+.chronicle-info-mission--connecting {
+  min-height: 600px;
+}
+
+.connecting-span {
+  animation: blink 1.5s ease infinite;
+  color: #66b2ff;
+  font-family: 'ME', Arial, sans-serif;
+  display: inline-block;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 40%;
+  margin-left: 40%;
+}
+
+.connecting-span--missions {
+  margin: 0;
+}
+
+.chronicle-info__desc-cont {
+  display: table;
+  min-height: 250px;
+  margin: 20px;
+}
+
+.chronicle-info__desc {
+  background-color: rgba(102,178,255,0.1);
+  border: 2px solid rgba(82, 139, 200, 0.7);
+  font: normal 73% arial, verdana, helvetica, sans-serif;
+  color: #bcc1d2;
+  display: table-cell;
+  padding: 0 15px;
+  text-align: center;
+  width: 300px;
+}
+
+.chronicle-info__header {
+  color: #66b2ff;
+  font-family: 'ME', Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  min-height: 20px;
+  line-height: 20px;
+}
+
+.chronicle-info__status, .chronicle-info__status-title {
+  font-family: 'ME', Arial, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.chronicle-info__status-cont {
+  margin-top: 30px;
+}
+
+.chronicle-info__status {
+  color: #66b2ff;
+}
+
+.chronicle-info__header--desc {
+  background: url('http://funkyimg.com/i/2fZt5.png') no-repeat 20% 50%;
+}
+
+.chronicle-info__header--arsenal {
+  background: url('http://funkyimg.com/i/2fZt4.png') no-repeat 20% 50%;
+}
+
+.chronicle-info__header--appearance {
+  background: url('http://funkyimg.com/i/2fZt3.png') no-repeat 20% 50%;
+}
+
+.chronicle-info__header--comrades {
+  background: url('http://funkyimg.com/i/2fZt2.png') no-repeat 20% 50%;
+}
+
+.chronicle-info__desc-delim {
+  display: table-cell;
+  padding: 0 5px;
+}
+
+.chronicle-info__img-cont {
+  border: 2px solid rgba(82, 139, 200, 0.7);
+  margin: 30px auto;
+  width: 440px;
+}
+
+.chronicle-info__img {
+  width: 100%;
+  opacity: 0.7;
+  transition: 0.5s ease-out;
+}
+
+.chronicle-info__img:hover {
+  opacity: 1;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade {
+  from {
+    display: block;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
