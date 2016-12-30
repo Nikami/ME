@@ -23,7 +23,7 @@ var showSortQuestInfo = function (event) {
     $('.chronicle-buttons__button.active').removeClass('active');
     el.addClass('active');
 
-    if (value === 'a' || value === 'c') {
+    if (value === 'a' || value === 'c' || value === 'x') {
         showMissions('data-status');
     } else if (value) {
         showMissions('data-period');

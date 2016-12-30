@@ -49,15 +49,19 @@ body {
 }
 
 .chronicle-buttons__button--closed {
-  background-image: url('http://funkyimg.com/i/2fY9C.png');
-  color: #e2440d;
+  background-image: url('http://funkyimg.com/i/2gbNr.png');
   margin-top: 34px;
 }
 
+.chronicle-buttons__button--complete {
+  background-image: url('http://funkyimg.com/i/2gbNq.png');
+  margin-top: -12px;
+  z-index: 1;
+}
+
 .chronicle-buttons__button--active {
-  background-image: url('http://funkyimg.com/i/2fY9B.png');
-  color: #66b2ff;
-  margin-top: -9px;
+  background-image: url('http://funkyimg.com/i/2gbNs.png');
+  margin-top: -12px;
 }
 
 .chronicle-buttons__span {
